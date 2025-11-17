@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css_sacada/loginestilo.css">
+    <link rel="stylesheet" href="css_sacada/Cadastre-se.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SacadaSITC</title>
@@ -11,22 +11,25 @@
     <button class="language-btn">idioma</button>
 
     <form>
-      <label for="empresa">ID Empresa:</label>
-      <input type="text" id="empresa" placeholder="">
+      <label for="empresa">Nome Completo</label>
+      <input type="text" id="foto_nome" placeholder="">
 
-      <label for="email">E-mail empresarial:</label>
+      <label for="email">E-mail Corporativo</label>
       <input type="email" id="email" placeholder="">
 
-      <label for="senha">Senha forte (8 caracteres):</label>
+      <label for="senha">Senha forte (8 caracteres)</label>
+      <div class="password-container">
+        <input type="password" id="senha" placeholder="">
+        <i>*</i>
+      </div>
+            <label for="confirmarsenha">Confirmar senha (8 caracteres)</label>
       <div class="password-container">
         <input type="password" id="senha" placeholder="">
         <i>*</i>
       </div>
 
-      <button type="submit" class="btn-acessar">ACESSAR</button>
-       <p class="register-text">
-        Não tem uma conta?
-        <a href="cadastre-se.html" class="register-link">Cadastre-se</a>
+      <button type="submit" class="btn-acessar">CADASTRAR ID</button>
+ 
       </p>
     </form>
 
@@ -40,12 +43,6 @@
 
   <div class="right-side">
     <h3>PLATAFORMA DO SETOR RH: SACADA CONSTRUÇÕES</h3>
-    <button class="role-btn">GERENTE RH</button>
-    <button class="role-btn">RECRUTADOR RH</button>
-
-    <div class="logo-bottom">
-      <img src="img/Sacadalogo.png" alt="Logo SACADA">
-    </div>
   </div>
 
 </body>

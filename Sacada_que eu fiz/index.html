@@ -1,49 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="css_sacada/Cadastre-se.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SacadaSITC</title>
-<body>
-  <div class="left-side">
-    <img src="img/Sacadalogo.png" alt="Logo SACADA">
-    <button class="language-btn">idioma</button>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SACADA - Candidatos</title>
+    <link rel="stylesheet" href="css_sacada/bancodetalentosestilo.css" />
+  </head>
 
-    <form>
-      <label for="empresa">Nome Completo</label>
-      <input type="text" id="foto_nome" placeholder="">
-
-      <label for="email">E-mail Corporativo</label>
-      <input type="email" id="email" placeholder="">
-
-      <label for="senha">Senha forte (8 caracteres)</label>
-      <div class="password-container">
-        <input type="password" id="senha" placeholder="">
-        <i>*</i>
-      </div>
-            <label for="confirmarsenha">Confirmar senha (8 caracteres)</label>
-      <div class="password-container">
-        <input type="password" id="senha" placeholder="">
-        <i>*</i>
-      </div>
-
-      <button type="submit" class="btn-acessar">CADASTRAR ID</button>
+  <body>
+    <div class="container">
  
-      </p>
-    </form>
+      <aside class="barra_lateral">
+        <div class="logo">
+          <img src="img/Sacadalogo.png" alt="Logo SACADA" />
+        </div>
 
-    <p class="terms">
-      Ao utilizar este site, o usuário concorda em fornecer informações verdadeiras, 
-      não utilizar os serviços para fins ilegais e respeitar todos os direitos de 
-      propriedade intelectual. A empresa poderá suspender ou encerrar o acesso caso 
-      detecte uso inadequado da plataforma.
-    </p>
+        <ul class="lista_lateral">
+          <li>
+            <a href="dashboard.html">
+            <img src="img/dashboard.png" alt="Dashboard" />
+            DASHBOARD
+            </a>
+          </li>
+          <li>
+            <a href="candidatos.html">
+            <img src="img/candidatos.png" alt="Candidatos" />
+            CANDIDATOS
+            </a>
+          </li>
+          <li class="ativo">
+            <a href="talentos.html">
+            <img src="img/talentos.png" alt="Talentos" />
+            TALENTOS
+            </a>
+          </li>
+          <a href="vagas.html">
+          <li>
+            <img src="img/vagas.png" alt="Vagas" />
+            VAGAS
+          </a>
+          </li>
+        </ul>
+
+        <div class="sair">
+          <img src="img/sair.png" alt="Sair" />
+          SAIR
+        </div>
+      </aside>
+
+      
+      <main class="conteudo">
+        <header class="topo">
+  <input type="text" placeholder="Criação de Nova Vaga" />
+  <div class="perfil">
+    <img src="img/user.png" alt="Usuário" />
+    <span>RH/Funcionário</span>
   </div>
+</header>
 
-  <div class="right-side">
-    <h3>PLATAFORMA DO SETOR RH: SACADA CONSTRUÇÕES</h3>
+        <section class="gerenciamento">
+          <h2>Busca Inteligente</h2>
+
+          <div class="busca">
+            <input type="text" placeholder="Analista de Marketing" />
+            <button>Aplicar</button>
+            <button class="limpar">Limpar</button>
+          </div>
+
+          <div class="info_resultados">
+            <h3>Candidaturas Arquivadas</h3>
+            <div class="contadores">
+              <span>Resultado: 6</span>
+              <span>Total: 76</span>
+            </div>
+          </div>
+
+          <div class="cards_candidatos">
+            <div class="card">
+              <div class="foto_nome">
+                <img src="img/user.png" alt="Candidato" />
+                <div>
+                  <h4>Manoel Silva</h4>
+                  <p>"Experiência longa em gestão de projetos com certificação"</p>
+                </div>
+              </div>
+              <div class="area_botao">
+                <span class="area">Marketing</span>
+                <button>Ver Perfil</button>
+              </div>
+              <img src="img/gmail.png" alt="Gmail" class="icone_gmail" />
+            </div>
+
+            <div class="card">
+              <div class="foto_nome">
+                <img src="img/user.png" alt="Candidato" />
+                <div>
+                  <h4>Bárbara Santos</h4>
+                  <p>"Especialista em campanhas publicitárias com ênfase em tráfego"</p>
+                </div>
+              </div>
+              <div class="area_botao">
+                <span class="area">Comunicação</span>
+                <button>Ver Perfil</button>
+              </div>
+              <img src="img/gmail.png" alt="Gmail" class="icone_gmail" />
+            </div>
+
+            <div class="card">
+              <div class="foto_nome">
+                <img src="img/user.png" alt="Candidato" />
+                <div>
+                  <h4>Hugo Drummount</h4>
+                  <p>"Experiência em Social Media como PJ em perfis corporativos"</p>
+                </div>
+              </div>
+              <div class="area_botao">
+                <span class="area">Mídias Sociais</span>
+               <button>Ver Perfil</button>
+              </div>
+              <img src="img/gmail.png" alt="Gmail" class="icone_gmail" />
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  <div id="modal_perfil" class="modal">
+  <div class="modal_conteudo">
+    <span class="fechar">&times;</span>
+    <h2>PERFIL: MANOEL SILVA</h2>
+    <p class="cargo_area">Candidato / Marketing • Pontuação: <strong>95%</strong></p>
+
+    <div class="dados">
+      <h3>DADOS</h3>
+      <div class="info_dados">
+        <p>
+          <img src="img/gmail.png" alt="Gmail" />
+          manoelbandreira23@gmail.com
+        </p>
+        <p>
+          <img src="img/whatsapp.png" alt="Whatsapp" />
+          (31) 9 3433-342
+        </p>
+        <p>
+          <img src="img/linkedin.png" alt="LinkedIn" />
+          <a href="https://br.linkedin.com/in/manoel-silva" target="_blank">
+            https://br.linkedin.com/in/manoel-silva
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="habilidades">
+      <h3>HABILIDADES / COMPETÊNCIAS</h3>
+      <div class="lista_habilidades">
+        <span>Superior Completo</span>
+        <span>Pós em Publicidade</span>
+        <span>MBA em Marketing</span>
+      </div>
+    </div>
+
+    <div class="botoes_modal">
+      <button class="azul">Agendar Entrevista</button>
+    </div>
   </div>
+</div>
+<div id="modal_entrevista" class="modal">
+  <div class="modal_conteudo grande">
+    <span class="fechar fechar-entrevista">&times;</span>
+    <h2>AGENDAR ENTREVISTA: MANOEL SILVA</h2>
+    <p class="cargo_area">Candidato / Marketing • Pontuação: <strong>95%</strong></p>
 
-</body>
+    <div class="formulario_entrevista">
+      <div class="grupo_form">
+        <label>Vaga</label>
+        <input type="text" value="Analista de Marketing" readonly />
+      </div>
+
+      <div class="grupo_form">
+        <label>Data da Entrevista</label>
+        <input type="date" />
+      </div>
+
+      <div class="grupo_form">
+        <label>Modalidade</label>
+        <select>
+          <option>Online</option>
+          <option>Presencial</option>
+        </select>
+      </div>
+
+      <div class="grupo_form">
+        <label>Local / Link</label>
+        <select>
+          <option>Google Meet</option>
+          <option>Microsoft Teams</option>
+          <option>Zoom</option>
+        </select>
+      </div>
+
+      <div class="grupo_form">
+        <label>Recrutador Responsável</label>
+        <input type="text" value="Juliana Gomes" readonly />
+      </div>
+
+      <div class="email_template">
+        <strong>Template de E-mail</strong>
+        <textarea rows="6" readonly>
+Prezado(a) [Nome], ficamos interessados em seu perfil e gostaríamos de convidar para nossa entrevista!
+
+Data: [__/__/____]
+Formato: [Online]
+Local: [Google Meet]
+
+Atenciosamente, 
+Equipe RH - SACADA Construções
+        </textarea>
+      </div>
+
+      <div class="botoes_modal">
+        <button class="azul">Enviar E-mail</button>
+        <button class="cinza btn_cancelar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js_sacada/modal_perfilbanco.js"></script>
+  </body>
 </html>
