@@ -1,0 +1,494 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f8f9fb;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.barra_lateral {
+  width: 15%;
+  background-color: #677BAB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  position: fixed;
+  height: 100vh;
+}
+.lista_lateral a {
+  text-decoration: none;
+  color: inherit; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  width: 70px;
+  margin-bottom: 8px;
+}
+
+.logo h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+.lista_lateral {
+  list-style: none;
+  width: 100%;
+}
+
+.lista_lateral li {
+  color: white;
+  opacity: 0.8;
+  padding: 12px 20px;
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lista_lateral li img {
+  width: 22px;
+  height: 22px;
+}
+
+.lista_lateral li:hover {
+  opacity: 1;
+  background-color: #3e8cde;
+  border-radius: 20px 0 0 20px;
+}
+
+.lista_lateral li.ativo {
+  background-color: #addbff;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 20px 0 0 20px;
+  opacity: 1;
+}
+.sair {
+  margin-top: auto;
+  padding-bottom: 20px;
+  color: white;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sair img {
+  width: 22px;
+  height: 22px;
+}
+
+.sair:hover {
+  opacity: 1;
+}
+.conteudo {
+  flex: 1;
+  background-color: #fff;
+  margin-left: 15%;
+}
+
+.topo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.topo input {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.perfil {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  font-size: 14px;
+  color: #000;
+}
+
+.perfil img {
+  width: 30px;
+  height: 24px;
+}
+.pagina_vagas {
+  display: flex;
+  gap: 25px;
+  padding: 25px 40px;
+}
+
+.vagas_conteudo {
+  flex: 2;
+}
+
+.vagas_conteudo h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.btn_criar {
+  background-color: #ADDBFF;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn_criar:hover {
+  background-color: #3e8cde;
+}
+
+.lista_vagas h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.vaga_card {
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.status {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.status.disponivel {
+  background-color: #88d446;
+  height: 20px;
+}
+
+.status.arquivada {
+  background-color: #e98d24;
+  height: 20px;
+}
+
+.vaga_info h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.vaga_info p {
+  font-size: 13px;
+  color: #444;
+}
+
+.acoes img {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.acoes img:hover {
+  transform: scale(1.1);
+}
+
+/* Painel direito */
+.painel_direito {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Título acima da caixa */
+.titulo-filtros {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Caixa dos filtros */
+.filtros {
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  border-radius: 12px;
+  padding: 15px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Campo de busca com ícone */
+.campo-busca {
+  position: relative;
+  width: 100%;
+}
+
+.campo-busca input {
+  width: 100%;
+  padding: 8px 30px 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.campo-busca .icone-lupa {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 14px;
+}
+
+/* Labels e checkboxes */
+.filtros label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 4px 0;
+  gap: 6px;
+}
+
+/* Botão limpar */
+.filtros .btn_limpar {
+  align-self: center;
+  padding: 4px 10px;
+  font-size: 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.filtros .btn_limpar:hover {
+  background-color: #eee;
+}
+
+
+.btn_limpar:hover {
+  background-color: #c8c8c8;
+}
+
+.relatorio h3 span {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.relatorio .item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.relatorio .item strong {
+  font-size: 16px;
+}
+
+.item.verde strong {
+  color: #88d446;
+}
+
+.item.laranja strong {
+  color: #e98d24;
+}
+
+.item.vermelho strong {
+  color: #ea4335;
+}
+
+.item.verde{
+  color: #88d446;
+}
+
+.item.laranja{
+  color: #e98d24;
+}
+
+.item.vermelho{
+  color: #ea4335;
+}
+.modal {
+  display: none; /* usar display:flex para mostrar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal_conteudo {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px 30px;
+  width: 600px;
+  max-width: 90%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer {
+  from {opacity: 0; transform: scale(0.95);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+.modal_topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.modal_topo h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.modal_topo .fechar {
+  font-size: 22px;
+  cursor: pointer;
+  color: #444;
+  transition: 0.3s;
+}
+
+.modal_topo .fechar:hover {
+  color: #000;
+}
+
+.form_editar_vaga {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form_duplo {
+  display: flex;
+  gap: 15px;
+}
+
+.form_grupo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form_grupo label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form_grupo input,
+.form_grupo textarea {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  resize: none;
+}
+
+.form_grupo input:focus,
+.form_grupo textarea:focus {
+  border-color: #3e8cde;
+}
+
+.btn_confirmar {
+  background-color: #3e8cde;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn_confirmar:hover {
+  background-color: #3e8cde;
+}
+.btn_cancelar,
+.btn_excluir {
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn_cancelar {
+  background-color: #c8c8c8;
+}
+
+.btn_cancelar:hover {
+  background-color: #c8c8c8;
+}
+
+.btn_excluir {
+  background-color: #ea4335;
+  color: #fff;
+}
+
+.btn_excluir:hover {
+  background-color: #ea4335;
+}
+.modal_mensagem {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.modal_botoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

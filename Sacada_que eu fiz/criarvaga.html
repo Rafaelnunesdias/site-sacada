@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SACADA - Dashboard</title>
+    <link rel="stylesheet" href="css_sacada/criarvagaestilo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="barra_lateral">
+        <div class="logo">
+          <img src="img/Sacadalogo.png" alt="Logo SACADA" />
+        </div>
+
+        <ul class="lista_lateral">
+          <li >
+            <a href="dashboard.html">
+            <img src="img/dashboard.png" alt="Dashboard" />
+            DASHBOARD
+            </a>
+          </li>
+          <li>
+            <a href="candidatos.html">
+            <img src="img/candidatos.png" alt="Candidatos" />
+            CANDIDATOS
+            </a>
+          </li>
+          <li>
+            <a href="talentos.html">
+            <img src="img/talentos.png" alt="Talentos" />
+            TALENTOS
+            </a>
+          </li>
+          <li class="ativo">
+            <a href="vagas.html">
+            <img src="img/vagas.png" alt="Vagas" />
+            VAGAS
+            </a>
+          </li>
+        </ul>
+
+        <div class="sair">
+          <img src="img/sair.png" alt="Sair" />
+          SAIR
+        </div>
+      </aside>
+
+      <main class="conteudo">
+        <header class="topo">
+          <input type="text" placeholder="Criação de Nova Vaga" /> 
+          <div class="perfil">
+            <img src="img/user.png" alt="Usuário" />
+            <span>RH/Funcionário</span>
+          </div>
+        </header>
+        <section class="formulario">
+  <h2>Criar Nova Vaga</h2>
+
+  <form>
+    <label>Título de Vaga</label>
+    <input type="text" placeholder="Digite o título da vaga" />
+
+    <label>Descrição</label>
+    <textarea placeholder="Descreva a vaga..." rows="4"></textarea>
+
+    <div class="linha">
+      <div class="coluna">
+        <label>Habilidades Necessárias</label>
+        <input type="text" placeholder="Ex: Liderança, Comunicação..." />
+      </div>
+      <div class="coluna">
+        <label>Habilidades Desejáveis</label>
+        <input type="text" placeholder="Ex: Inglês, Excel..." />
+      </div>
+    </div>
+
+    <div class="linha">
+      <div class="coluna">
+        <label>Formação Acadêmica</label>
+        <select>
+          <option>Ensino Médio</option>
+          <option>Graduação</option>
+          <option>Pós-Graduação</option>
+          <option>Mestrado</option>
+        </select>
+      </div>
+      <div class="coluna">
+        <label>Experiência Mínima</label>
+        <input type="text" placeholder="Ex: 2 anos" />
+      </div>
+    </div>
+
+    <label>Palavras-Chaves</label>
+    <input type="text" placeholder="Ex: Engenharia, Obras, Civil..." />
+
+    <button type="submit">CRIAR VAGA</button>
+  </form>
+</section>
+      </main>
+    </div>
+  </body>
+</html>

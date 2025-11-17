@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SACADA - Dashboard</title>
+  <link rel="stylesheet" href="css_sacada/vagasestilo.css">
+</head>
+
+<body>
+  <div class="container">
+    <aside class="barra_lateral">
+      <div class="logo">
+        <img src="img/Sacadalogo.png" alt="Logo SACADA" />
+      </div>
+
+      <ul class="lista_lateral">
+        <li>
+          <a href="dashboard.html">
+          <img src="img/dashboard.png" alt="Dashboard" />
+          DASHBOARD
+          </a>
+        </li>
+        <li>
+          <a href="candidatos.html">
+          <img src="img/candidatos.png" alt="Candidatos" />
+          CANDIDATOS
+          </a>
+        </li>
+        <li>
+          <a href="bancodetalentos.html">
+          <img src="img/talentos.png" alt="Talentos" />
+          TALENTOS
+          </a>
+        </li>
+        <li class="ativo">
+          <a href="vagas.html">
+          <img src="img/vagas.png" alt="Vagas" />
+          VAGAS
+        </a>  
+        </li>
+      </ul>
+
+      <div class="sair">
+        <img src="img/sair.png" alt="Sair" />
+        SAIR
+      </div>
+    </aside>
+
+    <main class="conteudo">
+      <header class="topo">
+        <input type="text" placeholder="Criação de Nova Vaga" />
+        <div class="perfil">
+          <img src="img/user.png" alt="Usuário" />
+          <span>RH/Funcionário</span>
+        </div>
+      </header>
+      <section class="pagina_vagas">
+        <div class="vagas_conteudo">
+          <h2>Vagas Abertas</h2>
+          <button class="btn_criar">CRIAR VAGA</button>
+
+          <div class="lista_vagas">
+            <h3>Lista de Vagas Ativas (3 ativas)</h3>
+            <div class="vaga_card">
+               <button class="btn_criar">Visiliazar Vaga</button>
+
+              <div class="vaga_info">
+                <h4>Engenheiro Civil Sênior</h4>
+                <p>45 Candidatos • Data Postada: DD/MM/AAAA</p>
+              </div>
+              <div class="acoes">
+
+                <img src="img/editar.png" alt="Editar" title="Editar" />
+                <img src="img/excluir.png" alt="Excluir" title="Excluir" />
+              </div>
+            </div>
+            <div class="vaga_card">
+                   <button class="btn_criar">Visiliazar Vaga</button>
+              <div class="vaga_info">
+                <h4>Engenheiro Civil Sênior</h4>
+                <p>45 Candidatos • Data Postada: DD/MM/AAAA</p>
+              </div>
+              <div class="acoes">
+                
+                <img src="img/editar.png" alt="Editar" title="Editar" />
+                <img src="img/excluir.png" alt="Excluir" title="Excluir" />
+              </div>
+            </div>
+            <div class="vaga_card">
+                <button class="btn_criar">Visiliazar Vaga</button>
+              <div class="vaga_info">
+                <h4>Engenheiro Civil Sênior</h4>
+                <p>45 Candidatos • Data Postada: DD/MM/AAAA</p>
+              </div>
+              <div class="acoes">
+                
+                <img src="img/editar.png" alt="Editar" title="Editar" />
+                <img src="img/excluir.png" alt="Excluir" title="Excluir" />
+              </div>
+            </div>
+
+            <div class="vaga_card">
+              <button class="btn_criar">Visiliazar Vaga</button>
+              <div class="vaga_info">
+                <h4>Pedreiro Chefe</h4>
+                <p>45 Candidatos • Data Postada: DD/MM/AAAA</p>
+              </div>
+              <div class="acoes">
+                
+                <img src="img/editar.png" alt="Editar" />
+                <img src="img/excluir.png" alt="Excluir" />
+              </div>
+            </div>
+            <div class="vaga_card">
+               <button class="btn_criar">Visiliazar Vaga</button>
+              <div class="vaga_info">
+                <h4>Pedreiro Chefe</h4>
+                <p>45 Candidatos • Data Postada: DD/MM/AAAA</p>
+              </div>
+              <div class="acoes">
+                
+                <img src="img/editar.png" alt="Editar" />
+                <img src="img/excluir.png" alt="Excluir" />
+              </div>
+            </div>
+            <div class="vaga_card">
+        <button class="btn_criar">Visiliazar Vaga</button>
+              <div class="vaga_info">
+                <h4>Pedreiro Chefe</h4>
+                <p>45 Candidatos • Data Postada: DD/MM/AAAA</p>
+              </div>
+              <div class="acoes">
+                
+                <img src="img/editar.png" alt="Editar" />
+                <img src="img/excluir.png" alt="Excluir" />
+              </div>
+            </div>
+            <div class="vaga_card">
+            <button class="btn_criar">Visiliazar Vaga</button>
+              <div class="vaga_info">
+                <h4>Pedreiro Chefe</h4>
+                <p>45 Candidatos • Data Postada: DD/MM/AAAA</p>
+              </div>
+              <div class="acoes">
+               
+                <img src="img/editar.png" alt="Editar" />
+                <img src="img/excluir.png" alt="Excluir" />
+              </div>
+            </div>
+          </div>
+        </div>
+      <aside class="painel_direito">
+  <h3 class="titulo-filtros">Filtros</h3>
+  <div class="filtros">
+    <div class="campo-busca">
+      <input type="text" placeholder="Buscar por título..." />
+      <span class="icone-lupa">&#128269;</span>
+    </div>
+    <label><input type="checkbox"> Lorem Ipsum</label>
+    <label><input type="checkbox"> Lorem Ipsum</label>
+    <label><input type="checkbox"> Lorem Ipsum</label>
+    <label><input type="checkbox"> Lorem Ipsum</label>
+    <button class="btn_limpar">Limpar Filtros</button>
+  </div>
+</aside>
+
+
+      <div id="modalEditarVaga" class="modal">
+  <div class="modal_conteudo">
+    <div class="modal_topo">
+      <h2>Editar Vaga</h2>
+      <span class="fechar">&times;</span>
+    </div>
+
+    <form class="form_editar_vaga">
+      <div class="form_grupo">
+        <label>Título de Vaga</label>
+        <input type="text" value="Engenheiro Civil Sênior" />
+      </div>
+
+      <div class="form_grupo">
+        <label>Habilidades Necessárias</label>
+        <input type="text" value="Construção de infraestruturas" />
+      </div>
+
+      <div class="form_grupo descricao">
+        <label>Descrição</label>
+        <textarea rows="3">Nesse cargo, o engenheiro deve realizar a construção de infraestruturas e de projetos</textarea>
+      </div>
+
+      <div class="form_duplo">
+        <div class="form_grupo">
+          <label>Habilidades Desejáveis</label>
+          <input type="text" value="Gestão de pessoas e gerir equipe" />
+        </div>
+
+        <div class="form_grupo">
+          <label>Experiência Mínima</label>
+          <input type="text" value="No mínimo 4 anos de experiência" />
+        </div>
+      </div>
+
+      <div class="form_duplo">
+        <div class="form_grupo">
+          <label>Formação Acadêmica</label>
+          <input type="text" value="Faculdade de engenharia" />
+        </div>
+
+        <div class="form_grupo">
+          <label>Palavras-Chaves</label>
+          <input type="text" value="NR-25/CCNA/AutoCAD/..." />
+        </div>
+      </div>
+
+      <button type="button" class="btn_confirmar">Confirmar</button>
+    </form>
+  </div>
+</div>
+<div id="modalExcluirVaga" class="modal">
+  <div class="modal_conteudo">
+    <div class="modal_topo">
+      <h2>Excluir Vaga</h2>
+      <span class="fechar">&times;</span>
+    </div>
+ <p class="modal_mensagem">Tem certeza que deseja excluir essa vaga?</p>
+<div class="modal_botoes">
+  <button class="btn_cancelar">Cancelar</button>
+  <button class="btn_excluir">Excluir</button>
+</div>
+  </div>
+</div>
+    </main>
+  </div>
+  <script src="js_sacada/modal_vagas.js"></script>
+  <script src="js_sacada/modal_excluir.js"></script>
+</body>
+
+</html>

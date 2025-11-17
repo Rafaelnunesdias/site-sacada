@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SACADA - Dashboard</title>
+    <link rel="stylesheet" href="css_sacada/dashboardestilo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="barra_lateral">
+        <div class="logo">
+          <img src="img/Sacadalogo.png" alt="Logo SACADA" />
+        </div>
+
+        <ul class="lista_lateral">
+          <li class="ativo">
+            <a href="dashboard.html">
+            <img src="img/dashboard.png" alt="Dashboard" />
+            DASHBOARD
+            </a>
+          </li>
+          <li>
+            <a href="candidatos.html">
+                <img src="img/candidatos.png" alt="Candidatos" />
+            CANDIDATOS
+            </a>
+          
+          </li>
+          <li>
+            <a href="bancodetalentos.html">
+            <img src="img/talentos.png" alt="Talentos" />
+            TALENTOS
+            </a>
+          </li>
+          <li>
+            <a href="vagas.html">
+            <img src="img/vagas.png" alt="Vagas" />
+            VAGAS
+            </a>
+          </li>
+        </ul>
+
+        <div class="sair">
+          <img src="img/sair.png" alt="Sair" />
+          SAIR
+        </div>
+      </aside>
+
+      <main class="conteudo">
+        <header class="topo">
+          <input type="text" placeholder="Criação de Nova Vaga" />
+          <div class="perfil">
+            <img src="img/user.png" alt="Usuário" />
+            <span>RH/Funcionário</span>
+          </div>
+        </header>
+          <section class="metricas">
+      <h2>Métricas Rápidas</h2>
+      <div class="cards_metricas">
+        <div class="card">
+          <h4>Vagas Ativas</h4>
+          <p class="numero verde">5 ✔</p>
+        </div>
+        <div class="card">
+          <h4>Novos Candidatos (Hoje)</h4>
+          <p class="numero azul">7</p>
+        </div>
+        <div class="card">
+          <h4>Entrevistas Agendadas</h4>
+          <p class="numero verde">4 ✔</p>
+        </div>
+        <div class="card">
+          <h4>Contratações do mês</h4>
+          <p class="numero preto">8</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="vagas">
+      <h2>Vagas Ativas</h2>
+      <div class="cards_vagas">
+        <div class="vaga">
+          <h3>Engenheiro Civil Sênior</h3>
+          <p>Data de abertura: dd/aa/mm</p>
+          <div class="total">
+            <p>Total de Candidatos <strong>30</strong></p>
+            <button>Visualizar Candidatos</button>
+          </div>
+          <h4>Barra de Status</h4>
+          <div class="status">
+            <div class="verde"></div>
+            <div class="amarelo"></div>
+            <div class="vermelho"></div>
+          </div>
+          <p class="legenda"><span class="verde">9 candidatos</span> <span class="amarelo">15 candidatos</span> <span class="vermelho">3 candidatos</span></p>
+        </div>
+
+        <div class="vaga">
+          <h3>Mestre de obras inovador</h3>
+          <p>Data de abertura: dd/aa/mm</p>
+          <div class="total">
+            <p>Total de Candidatos <strong>30</strong></p>
+            <button>Visualizar Candidatos</button>
+          </div>
+          <h4>Barra de Status</h4>
+          <div class="status">
+            <div class="verde"></div>
+            <div class="amarelo"></div>
+            <div class="vermelho"></div>
+          </div>
+          <p class="legenda"><span class="verde">9 candidatos</span> <span class="amarelo">15 candidatos</span> <span class="vermelho">3 candidatos</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
